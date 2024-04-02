@@ -19,3 +19,6 @@ background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 2%, #F8B500 44%, #FBDF
     font-weight: 500;
     color: white;
 }
+.heroPageLander{
+    height: 100svh;
+}

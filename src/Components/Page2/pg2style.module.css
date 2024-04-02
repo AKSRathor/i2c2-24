@@ -1,0 +1,22 @@
+.pg2Home{
+    height: 100svh;
+    background-color: #000c1b;
+    /* position: absolute; */
+}
+.writtenTextPara{
+    height: 80svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.writtenTextPara p{
+    width: 50%;
+    color: white;
+}
+.homeIICCP{
+    opacity: 0;
+}

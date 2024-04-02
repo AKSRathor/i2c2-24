@@ -1,0 +1,10 @@
+.pg3Div{
+    height: 100svh;
+    background-color: #222B48;
+}
+.pg3InnerDiv{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
