@@ -34,7 +34,7 @@ export default function Home() {
       <Lander />
       <Page2 />
       <Page3/>
-      <Page4/>
+      {/* <Page4/> */}
     </div>
   );
 }
