@@ -9,7 +9,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 import { useEffect } from "react";
 import Page3 from "@/Components/Page3/Page3";
-// import Page4 from "@/Components/Page4/Page4";
+import Page4 from "@/Components/Page4/Page4";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
       <Lander />
       <Page2 />
       <Page3/>
-      {/* <Page4/> */}
+      <Page4/>
     </div>
   );
 }
