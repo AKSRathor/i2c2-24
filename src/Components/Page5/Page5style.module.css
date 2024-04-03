@@ -1,0 +1,23 @@
+.hDivPg5{
+   font-size: 3em;
+   font-weight: bold;
+   color: white;
+
+}
+.hDivPg5 div{
+
+}
+.insideDivContainedPg5Outer{
+    display: flex;
+    justify-content: center;
+    
+}
+.insideDivContainedPg5{
+    width: 80%;
+
+}
+.allChallCard{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
