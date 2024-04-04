@@ -1,0 +1,27 @@
+.speakerTabPg9{
+    background-image: url('https://i2c2.vercel.app/_next/static/media/speaker.3c322ccb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45svh;
+    
+}
+.speakerTabPg9_2{
+    background-image: url('https://i2c2.vercel.app/_next/static/media/mentor.b88a0e49.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45svh;
+    
+}
+.speakerTabPg9_3{
+    background-image: url('https://i2c2.vercel.app/_next/static/media/campus_champ.58c9fb1b.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    height: 45svh;
+    
+}
+.page9Card{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%
+}

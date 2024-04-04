@@ -1,26 +1,18 @@
-.div9Div{
+.div10Div{
     background-color:#222B48 ;
     height: 110svh;
     display: flex;
     justify-content: center;
 }
-.page9Card{
-    width: 80%;
-}
-.div9DivNext{
+
+.div10DivNext{
     display: flex;
     flex-direction: column;
     gap: 43px;
 }
-.div9HDiv h1{
+
+.div10HDiv h1{
     color: white;
     font-size: 3em;
     font-weight: bold;
-}
-.tabPage9{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    
 }

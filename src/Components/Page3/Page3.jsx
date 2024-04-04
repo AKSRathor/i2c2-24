@@ -16,7 +16,7 @@ const Page3 = () => {
     <div className={`${style.pg3Div}`}>
       <div className={`${style.pg3InnerDiv}`}>
 
-        <Tabs defaultValue="account" className="w-[800px]">
+        <Tabs defaultValue="1" className="w-[800px]">
           <TabsList style={{ backgroundColor: 'transparent', justifyContent: 'center', gap: '44px', margin: '2% 0', width: '100%' }}>
             <TabsTrigger style={{ backgroundColor: '#000c1b', color: 'white', padding: '2%', width: '130px', justifyContent: 'center', borderRadius: "10px" }} value="1">About</TabsTrigger>
             <TabsTrigger style={{ backgroundColor: '#000c1b', color: 'white', padding: '2%', width: '130px', justifyContent: 'center', borderRadius: "10px" }} value="2">Why Participate?</TabsTrigger>
