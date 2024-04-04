@@ -77,23 +77,23 @@ const Page5 = () => {
 
         <div className={`${style.hDivPg5}`}><div> <h1>Challenges</h1></div></div>
 
-        <div class=" py-24 sm:py-32">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class={`mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 ${style.allChallCard}`}>
+        <div className=" py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className={`mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 ${style.allChallCard}`}>
               {myChallengeArr.map((i, index) => {
-                return <div key={index} class={`relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ${style.imgCardDiv}`}>
-                  <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                return <div key={index} className={`relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ${style.imgCardDiv}`}>
+                  <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                     <img src={i.imgLink} alt="" />
                   </div>
-                  <div class="p-6">
-                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  <div className="p-6">
+                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                       {i.head}
                     </h5>
-                    <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                       {i.prbState}
                     </p>
                   </div>
-                  <div class="p-6 pt-0">
+                  <div className="p-6 pt-0">
                     <Dialog>
                       <DialogContent>
                         <DialogHeader>
@@ -104,9 +104,9 @@ const Page5 = () => {
                           <DialogFooter>Challenged By <a href={i.challLink} target='_blank'>{i.challBy}</a></DialogFooter>
                         </DialogHeader>
                       </DialogContent>
-                        <DialogTrigger><button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                      <button data-ripple-light="true" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"><DialogTrigger>
                           View Problem Statement
-                        </button></DialogTrigger>
+                        </DialogTrigger></button>
                     </Dialog>
                   </div>
                 </div>
