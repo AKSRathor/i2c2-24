@@ -1,0 +1,21 @@
+.page6Height{
+    height: 100svh;
+    background-color:#222B48;
+    display: flex;
+    justify-content: center;
+}
+.page6HeightInsideDiv{
+    width: 80%;
+}
+.page6HDiv{
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+.page6BottomDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
