@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./Page9Style.module.css"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from"../ui/tabs"
 import "./Page9Style.css"
 
 const Page9 = () => {
