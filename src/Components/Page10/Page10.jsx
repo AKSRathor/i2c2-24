@@ -91,7 +91,7 @@ const Page10 = () => {
                 <div className={style.div10DivBot}>
                     <div className={style.div10SpeDiv}>
                         <div className={style.div10HSpeDiv}><h2></h2></div>
-                        <div className={style.div10PSpeDiv}><p>Get to know the speakers of this amazing Hackathon</p></div>
+                        <div className={style.div10PSpeDiv}><p>Grab the opportunity to learn from great mentors.</p></div>
                         <div className={style.div10CardDiv}>
                             {mentorsArr.map((i) => {
                                 return <div class="cardPg10">

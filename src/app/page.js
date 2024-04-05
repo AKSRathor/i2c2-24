@@ -15,6 +15,7 @@ import Page7 from "@/Components/Page7/Page7";
 import Page8 from "@/Components/Page8/Page8";
 import Page9 from "@/Components/Page9/Page9";
 import Page10 from "@/Components/Page10/Page10";
+import Page11 from "@/Components/Page11/Page11";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
       <Page8/>
       <Page9/>
       <Page10/>
+      <Page11/>
     </div>
   );
 }

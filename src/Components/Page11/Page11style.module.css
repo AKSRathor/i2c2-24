@@ -1,0 +1,25 @@
+.page11Div{
+    height: 100svh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+.page11DivNext{
+    width: 60%;
+}
+.page11HDiv{
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+.page11HDiv h1{
+    color: white;
+    font-size: 3em;
+}
+.page11DivAllAccr{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
