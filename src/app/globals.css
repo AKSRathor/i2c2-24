@@ -70,14 +70,16 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -96,7 +98,7 @@
   border-radius: 15px;
   cursor: pointer;
   transform: scale(1.2);
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
   background: rgb(103, 151, 255);
 }
 
@@ -110,11 +112,12 @@
   opacity: 1;
   border-radius: 15px;
 }
-.first-contentPg10 span{
+
+.first-contentPg10 span {
   width: 100%;
   height: 100%;
-  background-repeat:no-repeat ;
-  background-size:cover ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cardPg10:hover .first-contentPg10 {
@@ -145,4 +148,60 @@
   text-align: center;
   font-weight: 400;
   transform: rotate(0deg);
+}
+
+
+.cardPg12 {
+  padding: 2%;
+  width: 352px;
+  height: 409px;
+  background: rgb(17, 4, 134);
+  border-radius: 15px;
+  box-shadow: rgb(0, 0, 0, 0.7) 1px -5px 60px, rgb(0, 0, 0, 0.7) -5px 6px 0px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.cardPg12:hover {
+  box-shadow: rgb(0, 0, 0) 5px 10px 50px, rgb(0, 0, 0) -5px 0px 250px;
+}
+
+.time-textPg12 {
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.time-sub-textPg12 {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.day-textPg12 {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.moonPg12 {
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cardPg12:hover>.moonPg12 {
+  scale: 1.2;
 }

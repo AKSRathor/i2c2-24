@@ -1,0 +1,22 @@
+.page12Div{
+    background-color:#111 ;
+    height: 150svh;
+}
+.page12Div{
+    display: flex;
+    justify-content: center;
+}
+.page11HDiv{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    padding-bottom: 7%;
+}
+.page11CardsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 49px;
+    width: 80%;
+    margin: auto;
+}
