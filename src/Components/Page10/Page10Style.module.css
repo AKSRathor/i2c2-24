@@ -1,6 +1,6 @@
 .div10Div{
     background-color:#222B48 ;
-    height: 110svh;
+    height: 200svh;
     display: flex;
     justify-content: center;
 }
@@ -14,5 +14,23 @@
 .div10HDiv h1{
     color: white;
     font-size: 3em;
+    text-align: center;
     font-weight: bold;
+}
+.div10DivBot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div10CardDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 91px;
+}
+.div10PSpeDiv{
+    color: white;
+    padding: 2%;
+    text-align: center;
+    padding-bottom: 5%;
 }
