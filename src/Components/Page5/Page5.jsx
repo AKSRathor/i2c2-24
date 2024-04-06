@@ -94,7 +94,7 @@ const Page5 = () => {
       duration: 0.5
     })
   }
-  const handleOnCloseWindow = ()=>{
+  const handleOnCloseWindow = () => {
     gsap.to(".clickWindowPg5", {
       y: "100vh",
       duration: 0.5
@@ -128,8 +128,7 @@ const Page5 = () => {
         <div className={`${style.insideDivContainedPg5}`} >
 
           <div className={`${style.hDivPg5}`}><div> <h1>Challenges</h1></div></div>
-
-
+          <div className={`${style.pDivPg5}`}><div> <p>Choose your field, accept the challenge and get the trophy.</p></div></div>
 
           <div className=" py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">

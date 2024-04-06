@@ -11,11 +11,13 @@
     color: white;
     font-weight: bold;
     font-size: 3em;
+    text-align: center;
+    padding: 5%;
 }
 .page6BottomDiv{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 70px;
     width: 100%;
     justify-content: center;
 }

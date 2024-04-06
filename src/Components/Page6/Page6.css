@@ -1,8 +1,8 @@
 
 .cardPg6 {
     --bg: #f7f7f8;
-    --hover-bg: #FFE5F4;
-    --hover-text: #E50087;
+    --hover-bg: #73c9ff;
+    --hover-text: #111;
     max-width: 23ch;
     text-align: center;
     background: var(--bg);
@@ -63,4 +63,8 @@
   
   .cardPg6:hover>div,.cardPg6:hover>strong {
     opacity: 0;
+  }
+
+  .goldPricePg6{
+    scale:1.2
   }

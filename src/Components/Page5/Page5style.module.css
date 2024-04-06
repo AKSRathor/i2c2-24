@@ -2,7 +2,7 @@
    font-size: 3em;
    font-weight: bold;
    color: white;
-
+    text-align: center;
 }
 
 .insideDivContainedPg5Outer{
@@ -52,4 +52,10 @@
     right: 5%;
     color: white;
     cursor: pointer;
+}
+
+.pDivPg5{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
 }
