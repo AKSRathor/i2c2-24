@@ -18,6 +18,7 @@ import Page10 from "@/Components/Page10/Page10";
 import Page11 from "@/Components/Page11/Page11";
 import Page12 from "@/Components/Page12/Page12";
 import Footer from "@/Components/Footer/Footer";
+import { ParallaxProvider } from 'react-scroll-parallax';
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
@@ -37,21 +38,23 @@ export default function Home() {
   }, [])
 
   return (
-    <div>
-      <Navbar />
-      <Lander />
-      <Page2 />
-      <Page3/>
-      <Page4/>
-      <Page5/>
-      <Page6/>
-      <Page7/>
-      <Page8/>
-      <Page9/>
-      <Page10/>
-      <Page11/>
-      <Page12/>
-      <Footer/>
-    </div>
+    <ParallaxProvider>
+      <div>
+        <Navbar />
+        <Lander />
+        <Page2 />
+        <Page3 />
+        <Page4 />
+        <Page5 />
+        <Page6 />
+        <Page7 />
+        <Page8 />
+        <Page9 />
+        <Page10 />
+        <Page11 />
+        <Page12 />
+        <Footer />
+      </div>
+    </ParallaxProvider>
   );
 }

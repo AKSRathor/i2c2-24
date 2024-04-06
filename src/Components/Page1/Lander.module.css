@@ -1,24 +1,49 @@
-.ic2cLander{
+.ic2cLander {
     height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000E20;    ;
+    background-color: #000E20;
+    ;
 }
-.ic2cPara{
-    font-size: 13em;
+
+.ic2cPara {
+    font-size: 13em !important;
     font-weight: bold;
     background: #FCEABB;
-background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 2%, #F8B500 44%, #FBDF93 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 2%, #F8B500 44%, #FBDF93 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.ic2cLander div p{
+
+.ic2cLander div p {
     font-size: 1em;
     font-weight: 500;
     color: white;
+    text-align: center;
 }
-.heroPageLander{
+
+.heroPageLander {
     height: 100svh;
+}
+
+
+.writtenTextPara{
+    /* height: 80svh; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.writtenTextPara p{
+    width: 50%;
+    color: white;
+}
+.homeIICCP{
+    opacity: 0;
 }

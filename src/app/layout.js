@@ -1,7 +1,9 @@
+// 'use client';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script'
- 
+// import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>{children}</body>
       <script src="https://kit.fontawesome.com/7183ad8e8d.js" crossOrigin="anonymous"></script>
+      <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
     </html>
   );
 }

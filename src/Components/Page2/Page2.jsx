@@ -12,7 +12,7 @@ const Page2 = () => {
             opacity:1, 
             // duration:5,
             scrollTrigger: {
-                trigger: ".page2Home",
+                trigger: ".writtenTextPage2",
                 // toggleActions: "restart reverse restart none",
                 scrub: true,
                 // pin:true
@@ -24,10 +24,8 @@ const Page2 = () => {
     }, [])
     
   return (
-    <div className={`${style.pg2Home} page2Home`}>
-        <div className={`${style.writtenTextPara}`}>
-            <p className='homeIICCP'>Ideate Innovate Code Compete</p>
-        </div>
+    <div >
+  
     </div>
   )
 }
