@@ -23,17 +23,13 @@
     "gsap": "^3.12.5",
     "lucide-react": "^0.364.0",
     "next": "14.1.4",
-    "particles-bg": "^2.5.5",
     "react": "^18",
-    "react-chrono": "^2.6.1",
     "react-dom": "^18",
     "react-particles": "^2.12.2",
     "react-scroll-parallax": "^3.4.5",
     "react-scroll-trigger": "^0.6.14",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7",
-    "tsparticles": "^3.3.0",
-    "tsparticles-slim": "^2.12.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

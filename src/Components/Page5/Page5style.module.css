@@ -17,7 +17,7 @@
 .allChallCard{
     display: flex;
     flex-wrap: wrap;
-    gap: 65px;
+    gap: 45px;
 }
 .imgCardDiv{
     height: 45svh;

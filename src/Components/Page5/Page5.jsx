@@ -9,6 +9,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog"
+import { gsap } from 'gsap'
+import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 
 
 
@@ -20,7 +22,7 @@ const myChallengeArr = [
     prbState: "Design a simple working/non working website for this problem statement",
     challBy: "Trikon",
     challLink: 'https://trikon.io/',
-    imgLink:"https://i2c2.vercel.app/_next/static/media/health.658babc2.png"
+    imgLink: "https://media.wired.com/photos/61f48f02d0e55ccbebd52d15/3:2/w_2400,h_1600,c_limit/Gear-Rant-Game-Family-Plans-1334436001.jpg"
   },
   {
     head: "Education",
@@ -29,7 +31,7 @@ const myChallengeArr = [
     prbState: "",
     challBy: "I2C2 Team",
     challLink: 'https://i2c2.tech/',
-    imgLink:"https://i2c2.vercel.app/_next/static/media/education.d778eb33.png"
+    imgLink: "https://cdn.elearningindustry.com/wp-content/uploads/2022/02/shutterstock_1112381495.jpg"
   },
   {
     head: "Blockchain",
@@ -38,7 +40,7 @@ const myChallengeArr = [
     prbState: "",
     challBy: "Tezos",
     challLink: 'https://tezos.com/',
-    imgLink:"https://i2c2.vercel.app/_next/static/media/web3.d28c3acf.png",
+    imgLink: "https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Blockchain%20Technology.jpg",
   },
   {
     head: "Frontend Dev",
@@ -47,7 +49,7 @@ const myChallengeArr = [
     prbState: "Special Prize: 5ireChain will provide extra $1000 (If the project is selected by 5ireChain Judges).",
     challBy: "5ire",
     challLink: 'https://www.5ire.org/',
-    imgLink:"https://i2c2.vercel.app/_next/static/media/frontend.5216ab6a.png",
+    imgLink: "https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png",
   },
   {
     head: "Entrepreneurship",
@@ -56,7 +58,7 @@ const myChallengeArr = [
     prbState: "",
     challBy: " I2C2 Team",
     challLink: 'https://i2c2.tech/',
-    imgLink:"https://i2c2.vercel.app/_next/static/media/entrepreneurship.2f5ba1b6.png",
+    imgLink: "https://www.fsm.ac.in/pdf/fdp22/img/entrepreneurship-development.png",
   },
   {
     head: "Miscellaneous",
@@ -64,50 +66,45 @@ const myChallengeArr = [
     prbState: "",
     challBy: "",
     challLink: '',
-    imgLink:"https://i2c2.vercel.app/_next/static/media/miscellaneous.fd4d1007.png",
+    imgLink: "https://c4.wallpaperflare.com/wallpaper/383/217/191/abstract-pattern-mosaic-design-wallpaper-preview.jpg",
   },
 
 ]
 
 const Page5 = () => {
+
+  const handleOnShowWindow = ()=>{
+    
+    gsap.to(".clickWindowPg5", {
+      y:0,
+      duration:0.5
+    })
+  }
   return (
+    <>
+    <div className="clickWindowPg5">
+
+    </div>
     <div className={`${style.insideDivContainedPg5Outer}`} style={{ backgroundColor: "#222B48" }}>
 
       <div className={`${style.insideDivContainedPg5}`} >
 
         <div className={`${style.hDivPg5}`}><div> <h1>Challenges</h1></div></div>
 
+
+
         <div className=" py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className={`mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 ${style.allChallCard}`}>
+            <div className={`mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-2 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-5 ${style.allChallCard}`}>
               {myChallengeArr.map((i, index) => {
-                return <div key={index} className={`relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ${style.imgCardDiv}`}>
-                  <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                    <img src={i.imgLink} alt="" />
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      {i.head}
-                    </h5>
-                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                      {i.prbState}
-                    </p>
-                  </div>
-                  <div className="p-6 pt-0">
-                    <Dialog>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>{i.prbHead}</DialogTitle>
-                          <DialogDescription>
-                            {i.prbDesc}
-                          </DialogDescription>
-                          <DialogFooter>Challenged By <a href={i.challLink} target='_blank'>{i.challBy}</a></DialogFooter>
-                        </DialogHeader>
-                      </DialogContent>
-                      <button data-ripple-light="true" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"><DialogTrigger>
-                          View Problem Statement
-                        </DialogTrigger></button>
-                    </Dialog>
+                return <div class="card w-96 bg-base-100 shadow-xl image-full imgCardChallPg5">
+                  <figure><img src={i.imgLink} alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title cardTitlePg5">{i.head}</h2>
+                    <p className='cardPrbHeadPg5'>{i.prbHead}</p>
+                    <div class="card-actions justify-end">
+                      <button onClick={handleOnShowWindow} class="btn btn-primary">Show Problem Statement</button>
+                    </div>
                   </div>
                 </div>
               })}
@@ -119,7 +116,8 @@ const Page5 = () => {
       </div>
 
 
-    </div>
+    </div >
+    </>
   )
 }
 

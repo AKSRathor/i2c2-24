@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect } from 'react';
 import style from './Lander.module.css';
 import { Parallax } from 'react-scroll-parallax';
-import ParticlesBg from 'particles-bg'
+// import ParticlesBg from 'particles-bg'
 import Page2 from '../Page2/Page2';
 
 const Lander = () => {

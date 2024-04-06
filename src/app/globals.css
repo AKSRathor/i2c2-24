@@ -206,9 +206,34 @@
   scale: 1.2;
 }
 
-.page4ScrollPart{
+.page4ScrollPart {
   height: 50svh;
 }
-.page4ScrollPartHor>div{
+
+.page4ScrollPartHor>div {
   gap: 104px;
+}
+
+.imgCardChallPg5 {
+  height: 350px;
+  width: 350px;
+}
+
+.cardTitlePg5 {
+  color: white;
+}
+
+.cardPrbHeadPg5 {
+  color: wheat;
+}
+
+.clickWindowPg5 {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: black;
+  z-index: 150;
+  transform: translateY(100vh);
 }
