@@ -22,20 +22,20 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
-  useEffect(() => {
-    const lenis = new Lenis()
+  // useEffect(() => {
+  //   const lenis = new Lenis()
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
+  //   function raf(time) {
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
 
-    requestAnimationFrame(raf)
+  //   requestAnimationFrame(raf)
 
-    return () => {
+  //   return () => {
 
-    }
-  }, [])
+  //   }
+  // }, [])
 
   return (
     <ParallaxProvider>

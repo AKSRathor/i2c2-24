@@ -1,5 +1,8 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import style from "./Page4style.module.css"
+import { gsap } from 'gsap' 
+import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 
 const whyChooseUsArr = [
     {
@@ -29,8 +32,28 @@ const whyChooseUsArr = [
 ]
 
 const Page4 = () => {
+
+    useEffect(() => {
+        gsap.to(".gsapLiPage4Img",{
+            scale:2,
+            scrollTrigger: {
+                trigger: ".page4Part",
+                // toggleActions: "restart reverse restart none",
+                scrub: true,
+                stagger:true
+                // pin:true
+            },
+        })
+
+    
+      return () => {
+        
+      }
+    }, [])
+    
+
     return (
-        <div className={`${style.page4Home}`}>
+        <div className={`${style.page4Home} page4Part`}>
             <div className={`${style.page4HomeDiv}`} >
                 <div className={`${style.page4HomeHDiv}`}>
                     <div className="bg-white py-24 sm:py-32">
@@ -40,9 +63,9 @@ const Page4 = () => {
                             </div>
                             <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
                                 {whyChooseUsArr.map((i, index) => {
-                                    return <li key={index}>
+                                    return <li className='gsapLiPage4' key={index}>
                                         <div className="flex items-center gap-x-6">
-                                            <img className="h-16 w-16 rounded-full" src={i.link} alt="" />
+                                            <img className="h-16 w-16 rounded-full gsapLiPage4Img" src={i.link} alt="" />
                                             <div>
                                                 <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{i.h}
                                                 </h3>

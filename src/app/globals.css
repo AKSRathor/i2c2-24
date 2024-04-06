@@ -205,3 +205,10 @@
 .cardPg12:hover>.moonPg12 {
   scale: 1.2;
 }
+
+.page4ScrollPart{
+  height: 50svh;
+}
+.page4ScrollPartHor>div{
+  gap: 104px;
+}
