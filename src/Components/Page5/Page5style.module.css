@@ -22,3 +22,34 @@
 .imgCardDiv{
     height: 45svh;
 }
+.windowHead{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.windowHeadDiv{
+    width: 80%;
+    margin: auto;
+}
+.windowPDiv1{
+    color: white;
+    margin: auto;
+    width: 80%;
+}
+
+.windowPDiv2{
+    color: white;
+    margin: 2% auto;
+    width: 80%;
+    font-size: 1.2em;
+
+}
+
+.closeBtnWindow{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+}

@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import style from "./Page5style.module.css"
 import {
   Dialog,
@@ -73,50 +74,87 @@ const myChallengeArr = [
 
 const Page5 = () => {
 
-  const handleOnShowWindow = ()=>{
-    
+  const [windowObj, setWindowObj] = useState({ imgLink: '', prbHead: "", prbState: "", prbDesc: "", challLink: "", challBy: "", head: "" })
+  const handleOnShowWindow = (myObj) => {
+    setWindowObj(
+      {
+        imgLink: myObj.imgLink,
+        prbHead: myObj.prbHead,
+        prbState: myObj.prbState,
+        prbDesc: myObj.prbDesc,
+        challLink: myObj.challLink,
+        head: myObj.head,
+        challBy: myObj.challBy
+      }
+    )
+    console.log("my object is ", myObj)
+
     gsap.to(".clickWindowPg5", {
-      y:0,
-      duration:0.5
+      y: 0,
+      duration: 0.5
+    })
+  }
+  const handleOnCloseWindow = ()=>{
+    gsap.to(".clickWindowPg5", {
+      y: "100vh",
+      duration: 0.5
     })
   }
   return (
     <>
-    <div className="clickWindowPg5">
+      <div className="clickWindowPg5">
+        <div onClick={handleOnCloseWindow} className={`${style.closeBtnWindow}`}>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div style={{ backgroundImage: `url(${windowObj.imgLink})` }} className="windowUpperDiv">
+        </div>
+        <div className={`${style.windowHeadDiv}`}>
+          <h1 className={`${style.windowHead}`}>{windowObj.head}</h1>
+        </div>
 
-    </div>
-    <div className={`${style.insideDivContainedPg5Outer}`} style={{ backgroundColor: "#222B48" }}>
+        <div className={`${style.windowPDiv1}`}>
+          <h1 className={`${style.windowP1}`}>{windowObj.prbHead}</h1>
+        </div>
 
-      <div className={`${style.insideDivContainedPg5}`} >
+        <div className={`${style.windowPDiv2}`}>
+          <h1 className={`${style.windowP2}`}>{windowObj.prbState}</h1>
+        </div>
+        {windowObj.challBy.length > 0 && <div className={`${style.windowPDiv2}`}>
+          <h1 className={`${style.windowP2}`}> Challenged by <a href={windowObj.challLink}>{windowObj.challBy}</a></h1>
+        </div>}
+      </div>
+      <div className={`${style.insideDivContainedPg5Outer}`} style={{ backgroundColor: "#222B48" }}>
 
-        <div className={`${style.hDivPg5}`}><div> <h1>Challenges</h1></div></div>
+        <div className={`${style.insideDivContainedPg5}`} >
+
+          <div className={`${style.hDivPg5}`}><div> <h1>Challenges</h1></div></div>
 
 
 
-        <div className=" py-24 sm:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className={`mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-2 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-5 ${style.allChallCard}`}>
-              {myChallengeArr.map((i, index) => {
-                return <div class="card w-96 bg-base-100 shadow-xl image-full imgCardChallPg5">
-                  <figure><img src={i.imgLink} alt="Shoes" /></figure>
-                  <div class="card-body">
-                    <h2 class="card-title cardTitlePg5">{i.head}</h2>
-                    <p className='cardPrbHeadPg5'>{i.prbHead}</p>
-                    <div class="card-actions justify-end">
-                      <button onClick={handleOnShowWindow} class="btn btn-primary">Show Problem Statement</button>
+          <div className=" py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className={`mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-2 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-5 ${style.allChallCard}`}>
+                {myChallengeArr.map((i, index) => {
+                  return <div class="card w-96 bg-base-100 shadow-xl image-full imgCardChallPg5">
+                    <figure><img src={i.imgLink} alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title cardTitlePg5">{i.head}</h2>
+                      <p className='cardPrbHeadPg5'>{i.prbHead}</p>
+                      <div class="card-actions justify-end">
+                        <button onClick={() => handleOnShowWindow(i)} class="btn btn-primary">Show Problem Statement</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              })}
+                })}
 
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
 
-    </div >
+      </div >
     </>
   )
 }

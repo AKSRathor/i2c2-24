@@ -219,6 +219,11 @@
   width: 350px;
 }
 
+.imgCardChallPg5:hover{
+  scale: 1.1;
+  transition: all ease-out 0.1s;
+}
+
 .cardTitlePg5 {
   color: white;
 }
@@ -236,4 +241,11 @@
   background-color: black;
   z-index: 150;
   transform: translateY(100vh);
+  overflow-y: auto;
+}
+
+.windowUpperDiv{
+  height: 40svh;
+  width: 100%;
+  background-size: cover;
 }
